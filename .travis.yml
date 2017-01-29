@@ -13,7 +13,7 @@ env:
     - PHOST="https://$TRAVIS_BRANCH-$PNAME.pantheonsite.io"
 install:
   - echo "StrictHostKeyChecking no" > ~/.ssh/config
-  - composer global require drush/drush:6.2.0
+  - composer global require drush/drush:7.0.0
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - git clone https://github.com/pantheon-systems/terminus.git $HOME/.drush/terminus
   - cd $HOME/.drush/terminus
